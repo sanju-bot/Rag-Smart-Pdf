@@ -76,7 +76,7 @@ def main():
             st.subheader("📋 Uploaded Documents")
             doc_info = doc_mgr.get_document_info()
             
-            for doc_name, info in doc_info.items():
+            for doc_name, info in list(doc_info.items()):
                 col1, col2 = st.columns([3, 1])
                 with col1:
                     st.text(f"📄 {doc_name}")
