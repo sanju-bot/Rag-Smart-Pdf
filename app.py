@@ -75,6 +75,7 @@ def main():
         if doc_mgr.get_documents():
             st.subheader("📋 Uploaded Documents")
             doc_info = doc_mgr.get_document_info()
+            deleted_doc = None
             
             for doc_name, info in list(doc_info.items()):
                 col1, col2 = st.columns([3, 1])
@@ -82,9 +83,12 @@ def main():
                     st.text(f"📄 {doc_name}")
                     st.caption(f"Chunks: {info['chunks']} | Size: {info['size'] / 1024:.1f}KB")
                 with col2:
-                    if st.button("🗑️", key=f"del_{doc_name}"):
+                    if st.button("🗑️", key=f"del_{doc_name}", help="Delete this document"):
                         doc_mgr.remove_document(doc_name)
-                        st.warning(f"⚠️ Note: Rebuild vector store to fully remove '{doc_name}'")
+                        deleted_doc = doc_name
+            
+            if deleted_doc:
+                st.info(f"✅ Removed '{deleted_doc}' from metadata. Process PDFs again to update vector store.")
         
         st.divider()
         
