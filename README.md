@@ -2,6 +2,8 @@
 
 An intelligent chatbot application that allows users to upload PDF documents and ask questions about them using Retrieval-Augmented Generation (RAG) with the Groq API.
 
+**Current Version**: v2.0.1 ✨ (Bug fixes & UI improvements)
+
 ## ✨ Features
 
 ### Core Features
@@ -10,8 +12,8 @@ An intelligent chatbot application that allows users to upload PDF documents and
 - 🔍 **Semantic Search**: Intelligent document retrieval using embeddings
 - 📍 **Source Tracking**: See which documents were used to answer your questions
 
-### Enhanced Features (New)
-- 💬 **Chat History**: Persistent conversation history with timestamp
+### Enhanced Features (v2.0+)
+- 💬 **Chat History**: Persistent conversation history with timestamps
 - 📋 **Document Management**: List, view details, and remove uploaded documents
 - 📊 **Vector Store Stats**: Monitor total documents and chunks processed
 - 📥 **Export Chat**: Download entire chat conversations as text files

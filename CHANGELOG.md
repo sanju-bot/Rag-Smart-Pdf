@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.1] - 2026-03-01
+
+### Fixed
+- 🐛 Fixed dictionary changed size during iteration error when deleting documents
+  - Changed dictionary iteration to list to prevent RuntimeError
+  - Documents now delete smoothly without crashes
+  
+- 🎨 Improved delete button UI and message display
+  - Move success/info message below document list instead of overlapping button
+  - Add tooltip help text to delete button
+  - Better visual feedback when document is deleted
+  - Show cleaner info box with rebuild requirement
+
 ## [2.0.0] - 2026-03-01
 
 ### Added

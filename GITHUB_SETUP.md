@@ -83,7 +83,19 @@ git push -u origin main
    - Connect your repo
    - Streamlit will automatically deploy it
 
-## What's New in v2.0
+## What's New in v2.0.1
+
+🐛 **Bug Fixes**
+- Fixed dictionary iteration error when deleting documents
+- Improved delete button UI with better message positioning
+- Smoother user experience with proper error handling
+
+✨ **UI Improvements**
+- Delete button now has helpful tooltip
+- Success messages display cleanly below document list
+- Better visual feedback for all actions
+
+## Previous Release - What's in v2.0
 
 ✨ **Chat History** - Persistent conversations with timestamps
 📋 **Document Management** - View, track, and manage all uploaded PDFs
